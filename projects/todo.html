@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/projects/todo.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header class="text-center text-light my-4">
+          <h1 class="mb-4">Todo List</h1>
+          <form class="search">
+            <input class="form-control m-auto" type="text" name="search" placeholder="search todos" />
+          </form>
+        </header>  
+        <ul class="list-group todos mx-auto text-light">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span>play mariokart</span>
+            <span class="delete">×</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span>defeat ganon in zelda</span>
+            <span class="delete">×</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span>make a veggie pie</span>
+            <span class="delete">×</span>
+          </li>
+        </ul>
+    
+        <form class="add text-center my-4">
+          <label class="text-light">Add a new todo...</label>
+          <input class="form-control m-auto" type="text" name="add" />
+        </form>  
+      
+    </div>
+    <script>
+    const addForm = document.querySelector(".add");
+let list = document.querySelector(".todos");
+const search = document.querySelector(".search > .form-control");
+
+const generateTemplate = (todo) => {
+  const item = `
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        <span>${todo}</span>
+        <span class="delete">×</span>
+      </li>`;
+  list.innerHTML += item
+};
+
+addForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  
+  const todo = addForm.add.value.trim();
+  if(todo.length) {
+    generateTemplate(todo)
+    addForm.reset()
+  }
+  
+});
+
+// Delete todo
+list.addEventListener('click', e => {
+  if(e.target.classList.contains('delete')) {
+    e.target.parentElement.remove()
+  }
+})
+
+// filter todos
+const filterTodo = term => {
+  Array.from(list.children)
+    .filter(todo => !todo.textContent.toLowerCase().includes(term))
+    .forEach(todo => todo.classList.add('filtered'));
+  
+  Array.from(list.children)
+    .filter(todo => todo.textContent.toLowerCase().includes(term))
+    .forEach(todo => todo.classList.remove('filtered'));
+}
+search.addEventListener('keyup', () => {
+  const term = search.value.trim().toLowerCase()
+  filterTodo(term)
+})
+
+</script>
+</body>
+</html>
