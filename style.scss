@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+*{
+    font-family: Poppins;
+}
+$primary-color: #FEE600;
+$secondary-color: black;
+
+body{
+    background-color: $primary-color;
+}
+
+.bg-black {
+    background-color: $secondary-color;
+    color: white;
+}
+.text-black{
+    color: $secondary-color;
+}
+.rounded-4{
+    border-radius: 50px;
+}
+.social-icon{
+    color: $secondary-color;
+    &:hover{
+        color: $primary-color;
+    }
+}
+
+.heading{
+    transition: all 2s;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.btn-primary-custom{
+    background-color: $primary-color;
+    color:$secondary-color;
+}
+.btn-secondary-custom{
+    background-color: $secondary-color;
+    color: white;
+    &:hover{  
+    color:$primary-color;
+    }
+    
+}
+.card-shadow{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    &:hover{
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+}

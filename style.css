@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
+* {
+  font-family: Poppins;
+}
+
+body {
+  background-color: #FEE600;
+}
+
+.bg-black {
+  background-color: black;
+  color: white;
+}
+
+.text-black {
+  color: black;
+}
+
+.rounded-4 {
+  border-radius: 50px;
+}
+
+.social-icon {
+  color: black;
+}
+
+.social-icon:hover {
+  color: #FEE600;
+}
+
+.heading {
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.heading:hover {
+  text-decoration: underline;
+}
+
+.btn-primary-custom {
+  background-color: #FEE600;
+  color: black;
+}
+
+.btn-secondary-custom {
+  background-color: black;
+  color: white;
+}
+
+.btn-secondary-custom:hover {
+  color: #FEE600;
+}
+
+.card-shadow {
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card-shadow:hover {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+/*# sourceMappingURL=style.css.map */
