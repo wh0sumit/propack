@@ -4,14 +4,14 @@ $('document').ready(()=>{
   }
   
   
-  if (localStorage['tasks']) {
-    var tasks = JSON.parse(localStorage['tasks']);
+  if (localStorage['todos']) {
+    var todos = JSON.parse(localStorage['todos']);
   }else {
-    var tasks = [];
+    var todos = [];
   }
   
-  for(var i=0;i<tasks.length;i++) {
-    appendTaskToList(tasks[i]);
+  for(var i=0;i<todos.length;i++) {
+    appendTaskToList(todos[i]);
   }
   
   var addTask = function(){
@@ -19,10 +19,10 @@ $('document').ready(()=>{
     var val = $('.input').val();
     
     // add the task to the array
-    tasks.push(val);
+    todos.push(val);
     
     // save to local storage
-    localStorage["tasks"] = JSON.stringify(tasks);
+    localStorage["todos"] = JSON.stringify(todos);
     
     // append the name to the list
     appendTaskToList(val);
@@ -39,25 +39,19 @@ $('document').ready(()=>{
   });
   
   
-  // approach 1
-  /*$('.done-btn').click(function(){
-    $(this).parent('li').addClass('done');
-  });*/
-    
-  $('.remove').click(function(){
-    let removeKey = $(this).parent('li').text();
-      
-tasks = tasks.filter(function(item) {
-  return item !== removeKey
-})
 
-console.log(tasks)
+  $('.remove').click(function(){
+    let value = $(this).parent('li');
+    value.remove();
+     removeLocalTodo(value);
+     
+  });
+ 
       
-    $(this).parent('li').remove();
+  
 
 });   
 
-});
 
 
 

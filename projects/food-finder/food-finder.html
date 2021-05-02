@@ -16,31 +16,31 @@
           integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
           crossorigin="anonymous" />
      <link rel="stylesheet" href="/style.css">
-
-     <title>Propack | About</title>
+     <title>Food Finder</title>
 </head>
 
 <body>
      <div id="navbar"></div>
 
+     <div class="container d-flex justify-content-center my-5">
+          <div class="bg-black rounded-3 p-5 col-10">
+               <div class=" text-center box font">
+                    <h1> Find Your Meal 🥘</h1>
+                    <div class="row g-3 justify-content-center">
 
-     <div class=" text-lg-start text-center d-flex justify-content-center flex-wrap-reverse my-5">
-
-          <div class=" col-lg-6 p-4 text-lg-start text-center my-5">
-               <h1 class="display-3 fw-bold lh-1 mb-3">About Us</h1>
-               <p class="lead">Searching for bacis JavaScript Project?
-                    Here’s something for you!
-                    this website contain basic JavaScript Project that you can test live and use on your own website .
-                    Its an Open Source Project so anyone can Contribute</p>
+                         <div class="col-auto">
+                              <input type="text" class="form-control rounded-pill" placeholder="Enter Your Meal Name">
+                         </div>
+                         <div class="col-auto">
+                              <button type="submit" class="btn btn-light mb-3 find-meal rounded-pill px-4">Find
+                                   🔍</button>
+                         </div>
+                    </div>
+               </div>
+               <div class="meals d-flex justify-content-center row mx-2 my-5">
+               </div>
           </div>
-          <div class="image p-sm-4">
-               <img src="/images/about.png" class="img-fluid rounded-4" alt="Hero Image" width="500" height="400">
-          </div>
-
      </div>
-
-     <div id="footer"></div>
-
      <!-- Option 1: Bootstrap Bundle with Popper -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
@@ -48,9 +48,9 @@
      <script>
           $(function () {
                $("#navbar").load("/include/navbar.html");
-               $("#footer").load("/include/footer.html");
           });
      </script>
+     <script src="food-finder.js"></script>
 </body>
 
 </html>
