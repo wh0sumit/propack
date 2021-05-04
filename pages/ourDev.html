@@ -26,19 +26,20 @@
      <section class="container d-flex justify-content-center">
           <div class="bg-black rounded-3 p-5 col-10">
                <div class=" text-center box font">
-                    <h1>Our Developers</h1>
+                    <h1 class="text-light">Our Developers</h1>
                </div>
                <div class="row text-center my-5">
                     <!-- Team item -->
                     <div class="col-xl-6 col-sm-6 mb-5 h-100 card-shadow">
-                         <div class="bg-white rounded shadow-sm py-5 px-4"><img src="/images/sumit.jpeg" alt=""
-                                   width="300" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
-                                   height="200">
+                         <div class="bg-white rounded shadow-sm py-5 px-4">
+                              <img src="/images/sumit.jpeg" alt="" width="300"
+                                   class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm 3D-effect" height="200"
+                                   data-tilt>
                               <h5 class="mb-0 text-black fw-bold">Sumit Singh</h5><span
                                    class="small text-uppercase text-muted">Developer</span>
                               <ul class="social mb-0 list-inline mt-3">
                                    <li class="list-inline-item"><a href="https://github.com/WH0SUMIT" target="_blank"
-                                             class="social-icon"><i class="fab fa-github fs-3"></i></a></li>
+                                             class="social-icon"><i class="fab fa-github fs-3" data-tilt></i></a></li>
                                    <li class="list-inline-item"><a href="https://www.instagram.com/wh0sumit/"
                                              target="_blank" class="social-icon" class="social-link"><i
                                                   class="fab fa-instagram fs-3"></i></a></li>
@@ -51,8 +52,8 @@
                     <!-- Team item -->
                     <div class="col-xl-6 col-sm-6 mb-5 h-100">
                          <div class="bg-white rounded py-5 px-4 card-shadow "><img src="/images/jaspreet.jpg" alt=""
-                                   width="300" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
-                                   height="200">
+                                   width="300" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm 3D-effect"
+                                   height="200" data-tilt>
                               <h5 class="mb-0 text-black fw-bold">Jaspreet Singh Saini</h5><span
                                    class="small text-uppercase text-muted">Designer</span>
                               <ul class="social mb-0 list-inline mt-3">
@@ -82,6 +83,16 @@
                $("#navbar").load("/include/navbar.html");
                $("#footer").load("/include/footer.html");
           });
+     </script>
+     <script type="text/javascript" src="/js/vanilla-tilt.js"></script>
+     <script type="text/javascript">
+          VanillaTilt.init(document.querySelector(".3d-effect"), {
+               max: 25,
+               speed: 400
+          });
+
+          //It also supports NodeList
+          VanillaTilt.init(document.querySelectorAll(".3d-effect"));
      </script>
 </body>
 
