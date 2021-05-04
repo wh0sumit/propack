@@ -15,7 +15,7 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
           integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
           crossorigin="anonymous" />
-     <link rel="stylesheet" href="/style.css">
+     <link rel="stylesheet" href="/css/style.css">
 
      <title>Propack | About</title>
 </head>
@@ -24,20 +24,21 @@
      <div id="navbar"></div>
 
 
-     <div class=" text-lg-start text-center d-flex justify-content-center flex-wrap-reverse my-5">
-
-          <div class=" col-lg-6 p-4 text-lg-start text-center my-5">
-               <h1 class="display-3 fw-bold lh-1 mb-3">About Us</h1>
-               <p class="lead">Searching for bacis JavaScript Project?
-                    Here’s something for you!
-                    this website contain basic JavaScript Project that you can test live and use on your own website .
-                    Its an Open Source Project so anyone can Contribute</p>
-          </div>
+     <section class=" text-lg-start d-flex justify-content-between flex-wrap">
           <div class="image p-sm-4">
-               <img src="/images/about.png" class="img-fluid rounded-4" alt="Hero Image" width="500" height="400">
+               <img src="/images/about.png" class="img-fluid 3D-effect" alt="Hero Image" width="500" height="400"
+                    data-tilt>
+          </div>
+          <div class=" col-lg-6 p-4 text-lg-start text-center text-dark align-self-center">
+               <h1 class="display-3 fw-bold lh-1 mb-3">About Us</h1>
+               <p class="lead">ProPack is a solution for every beginner programmer who cannot find the right resources
+                    and projects. We provide basic web development projects now on our website we are planning to add
+                    some more projects in the future and this is an open-source project so anyone can contribute to it.
+                    Let's Build It Together.</p>
           </div>
 
-     </div>
+
+     </section>
 
      <div id="footer"></div>
 
@@ -50,6 +51,16 @@
                $("#navbar").load("/include/navbar.html");
                $("#footer").load("/include/footer.html");
           });
+     </script>
+     <script type="text/javascript" src="/js/vanilla-tilt.js"></script>
+     <script type="text/javascript">
+          VanillaTilt.init(document.querySelector(".3d-effect"), {
+               max: 25,
+               speed: 400
+          });
+
+          //It also supports NodeList
+          VanillaTilt.init(document.querySelectorAll(".3d-effect"));
      </script>
 </body>
 

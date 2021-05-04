@@ -15,7 +15,7 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
           integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
           crossorigin="anonymous" />
-     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="css/style.css">
 
      <title>Propack</title>
 </head>
@@ -24,23 +24,25 @@
      <div id="navbar"></div>
 
 
-     <div class=" text-lg-start text-center d-flex justify-content-center flex-wrap-reverse my-5">
+     <section class=" text-lg-start text-center d-flex justify-content-between flex-wrap-reverse ">
 
-          <div class=" col-lg-6 p-4 text-lg-start text-center my-5">
+          <div class=" col-lg-6 p-4 text-lg-start text-center text-dark align-self-center">
                <h1 class="display-3 fw-bold lh-1 mb-3">ProPack</h1>
-               <p class="lead">ProPack is the one step solution for everyone who wants basic JavaScript Project with
+               <p class="lead">ProPack is the one-stop solution for everyone who wants basic JavaScript Project with
                     live demo and code.</p>
-               <a type="button" class="btn btn-secondary-custom text-light rounded-pill px-4 card-shadow"
+               <a type="button" class="btn btn-secondary-custom text-light rounded-pill px-4"
                     href="/pages/project.html">Get
                     Started</a>
           </div>
-          <div class="image p-sm-2 ">
-               <img src="images/hero.png" class="img-fluid rounded-4" alt="Hero Image" width="500" height="400">
+          <div class="image p-sm-2 d-lg-block d-sm-none">
+               <img src="images/thumb.png" class="img-fluid 3D-effect" alt="Hero Image" width="500" height="400"
+                    data-tilt>
           </div>
 
-     </div>
+     </section>
 
      <div id="footer"></div>
+
 
      <!-- Option 1: Bootstrap Bundle with Popper -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
@@ -52,6 +54,17 @@
                $("#footer").load("include/footer.html");
           });
      </script>
+     <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+     <script type="text/javascript">
+          VanillaTilt.init(document.querySelector(".3d-effect"), {
+               max: 25,
+               speed: 400
+          });
+
+          //It also supports NodeList
+          VanillaTilt.init(document.querySelectorAll(".3d-effect"));
+     </script>
+
 </body>
 
 </html>

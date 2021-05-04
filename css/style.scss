@@ -3,16 +3,19 @@
 *{
     font-family: Poppins;
 }
-$primary-color: #FEE600;
+$primary-color: white;
 $secondary-color: black;
 
 body{
     background-color: $primary-color;
 }
-
-.bg-black {
-    background-color: $secondary-color;
-    color: white;
+.bg-transparent{
+    background: rgba( 255, 255, 255, 0.10 );
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    box-shadow: 0 1px 3px rgba(124, 117, 117, 0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 .text-black{
     color: $secondary-color;
@@ -22,9 +25,6 @@ body{
 }
 .social-icon{
     color: $secondary-color;
-    &:hover{
-        color: $primary-color;
-    }
 }
 
 .heading{
@@ -33,16 +33,23 @@ body{
         text-decoration: underline;
     }
 }
-
+.bg-black{
+    background-color: black;
+}
 .btn-primary-custom{
     background-color: $primary-color;
-    color:$secondary-color;
+    color : $secondary-color;
+    &:hover{
+        color : $secondary-color;
+    }
 }
 .btn-secondary-custom{
     background-color: $secondary-color;
-    color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     &:hover{  
     color:$primary-color;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     }
     
 }
@@ -52,4 +59,7 @@ body{
     &:hover{
         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     }
+}
+section{
+margin: 10rem;
 }
