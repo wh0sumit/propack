@@ -36,7 +36,7 @@ Let's Build It Together.
 
 ## Get Started
 
-Just follow the link given below and get started. find all of your favourite projects in projects section -
+Just follow the link given below and get started. find all of your favorite projects in the projects section -
 
 [ProPack](https://propack.netlify.app/)
 
