@@ -32,22 +32,23 @@
                <form name="contact" method="POST" data-netlify="true">
                     <div class=" mb-3">
                          <label for="fname" class="form-label text-light">First Name</label>
-                         <input type="text" class="form-control" id="fname" placeholder="First Name" required>
+                         <input type="text" class="form-control" id="fname" placeholder="First Name" name="first-name"
+                              required>
                     </div>
                     <div class=" mb-3">
                          <label for="lname" class="form-label text-light">Last Name</label>
-                         <input type="text" class="form-control" id="lname" placeholder="Last Name" required>
+                         <input type="text" class="form-control" id="lname" name="last-name" placeholder="last Name"
+                              required>
                     </div>
 
                     <div class=" mb-3">
-                         <label for="exampleFormControlInput1" class="form-label text-light">Email address</label>
-                         <input type="email" class="form-control" id="exampleFormControlInput1"
-                              placeholder="name@example.com" required>
+                         <label class="form-label text-light">Email address</label>
+                         <input type="email" class="form-control" placeholder=" name@example.com" name="email" required>
                     </div>
                     <div class="mb-3">
-                         <label for="exampleFormControlTextarea1" class="form-label text-light">Message</label>
-                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"
-                              placeholder="Enter Your message Here" required></textarea>
+                         <label class="form-label text-light">Message</label>
+                         <textarea class="form-control" rows="7" placeholder="Enter Your message Here" required
+                              name="message"></textarea>
                     </div>
                     <div class="d-grid gap-2">
                          <button class="btn btn-primary-custom" type="submit">Send</button>
