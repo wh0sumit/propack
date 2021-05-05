@@ -32,7 +32,7 @@ Let's Build It Together.
 
 ## Version Releases
 
-- [v0.1 (First Ever Release)](#)
+- [v0.1 (First Ever Release)](https://github.com/WH0SUMIT/propack/releases/tag/v1.0)
 
 ## Get Started
 
