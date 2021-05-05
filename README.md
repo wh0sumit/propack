@@ -5,7 +5,7 @@
   <span>
     <a style="font-size: 16px;" href="https://propack.netlify.app/">Website</a> &bullet;
     <a style="font-size: 16px;" href="#">Docs</a>  &bullet;
-    <a style="font-size: 16px;" href="#">Discord</a>
+    <a style="font-size: 16px;" href="https://discord.com/invite/TgmRxvppg9">Discord</a>
   </span>
   </p>
 </div>
@@ -32,7 +32,7 @@ Let's Build It Together.
 
 ## Version Releases
 
-- [v0.1 (First Ever Release)](#)
+- [v0.1 (First Ever Release)](https://github.com/WH0SUMIT/propack/releases/tag/v1.0)
 
 ## Get Started
 
