@@ -1,4 +1,4 @@
-<h1 align="center">Welcome To ProPack 🚀</h1>
+<h1 align="center">Documentation -ProPack (v1.0)🚀</h1>
 
 <div style="margin-bottom: 2em;">
   <p align="center">
@@ -8,17 +8,6 @@
     <a style="font-size: 16px;" href="https://discord.com/invite/TgmRxvppg9">Discord</a>
   </span>
   </p>
-</div>
-<div align="center">
-
-![last commit](https://img.shields.io/github/last-commit/WH0SUMIT/propack)
-![issues](https://img.shields.io/github/issues/WH0SUMIT/propack)
-![git stars](https://img.shields.io/github/stars/WH0SUMIT/propack)
-![Size](https://img.shields.io/github/repo-size/WH0SUMIT/propack)
-![Language](https://img.shields.io/github/languages/top/WH0SUMIT/propack)
-![Maintained](https://img.shields.io/maintenance/yes/2021)
-![Platform](https://img.shields.io/badge/platform-Visual%20Studio%20Code-blue)
-
 </div>
 
 ## Key Headings
@@ -45,13 +34,13 @@ Just follow the link given below and get started. find all of your favorite proj
 
 And you are all good to go :star:
 
-## Documentation
+<!--active project start-->
 
-Here's the [Documentation for ProPack]("").
+<!--active project end-->
 
 ## CONTRIBUTING
 
 We want to build a great atmosphere where all the developers/designers or people are ready to contribute.
 All the contributions, issues, and feature requests are welcome.
 
-### Please give this project a :star: and fork for future references.
+Please give this project a :star: and fork for future references.

@@ -21,12 +21,13 @@
 </head>
 
 <body>
+
      <div id="navbar"></div>
+     <div class="cursor d-none d-sm-block"></div>
 
+     <section class="d-flex justify-content-md-center flex-wrap-reverse ">
 
-     <section class=" text-lg-start text-center d-flex justify-content-between flex-wrap-reverse ">
-
-          <div class=" col-lg-6 p-4 text-lg-start text-center text-dark align-self-center">
+          <div class=" col-lg-6 p-4 text-center text-lg-start text-dark align-self-center">
                <h1 class="display-3 fw-bold lh-1 mb-3">ProPack</h1>
                <p class="lead">ProPack is the one-stop solution for everyone who wants basic JavaScript Project with
                     live demo and code.</p>
@@ -34,8 +35,8 @@
                     href="/pages/project.html">Get
                     Started</a>
           </div>
-          <div class="image p-sm-2 d-lg-block d-sm-none">
-               <img src="images/thumb.png" class="img-fluid 3D-effect" alt="Hero Image" width="500" height="400"
+          <div class="image p-sm-2 d-none d-lg-block justify-content-md-center">
+               <img src="images/thumb.png" class="img-fluid 3D-effect" alt="Hero Image" width="400" height="300"
                     data-tilt>
           </div>
 
@@ -54,6 +55,7 @@
                $("#footer").load("include/footer.html");
           });
      </script>
+     <script type="text/javascript" src="js/script.js"></script>
      <script type="text/javascript" src="js/vanilla-tilt.js"></script>
      <script type="text/javascript">
           VanillaTilt.init(document.querySelector(".3d-effect"), {

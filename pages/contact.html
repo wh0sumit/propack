@@ -23,31 +23,32 @@
 <body>
      <div id="navbar"></div>
 
+     <div class="cursor d-none d-sm-block"></div>
      <section class="container d-flex justify-content-center ">
-          <div class=" rounded-4 p-5 col-lg-7 col-md-12 bg-black ">
+          <div class=" rounded-3 p-5 col-lg-7 col-md-12 bg-black ">
                <h1 class="text-center bg-light text-dark p-3 my-3 rounded-3 fw-bold">
                     Get In Touch 💜
                </h1>
                <form name="contact" method="POST" data-netlify="true">
-
                     <div class=" mb-3">
                          <label for="fname" class="form-label text-light">First Name</label>
-                         <input type="text" class="form-control" id="fname" placeholder="First Name" required>
+                         <input type="text" class="form-control" id="fname" placeholder="First Name" name="first-name"
+                              required>
                     </div>
                     <div class=" mb-3">
                          <label for="lname" class="form-label text-light">Last Name</label>
-                         <input type="text" class="form-control" id="lname" placeholder="Last Name" required>
+                         <input type="text" class="form-control" id="lname" name="last-name" placeholder="last Name"
+                              required>
                     </div>
 
                     <div class=" mb-3">
-                         <label for="exampleFormControlInput1" class="form-label text-light">Email address</label>
-                         <input type="email" class="form-control" id="exampleFormControlInput1"
-                              placeholder="name@example.com" required>
+                         <label class="form-label text-light">Email address</label>
+                         <input type="email" class="form-control" placeholder=" name@example.com" name="email" required>
                     </div>
                     <div class="mb-3">
-                         <label for="exampleFormControlTextarea1" class="form-label text-light">Message</label>
-                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"
-                              placeholder="Enter Your message Here" required></textarea>
+                         <label class="form-label text-light">Message</label>
+                         <textarea class="form-control" rows="7" placeholder="Enter Your message Here" required
+                              name="message"></textarea>
                     </div>
                     <div class="d-grid gap-2">
                          <button class="btn btn-primary-custom" type="submit">Send</button>
@@ -62,6 +63,7 @@
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
      </script>
+     <script type="text/javascript" src="/js/script.js"></script>
      <script>
           $(function () {
                $("#navbar").load("/include/navbar.html");

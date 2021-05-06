@@ -22,15 +22,16 @@
 
 <body>
      <div id="navbar"></div>
+     <div class="cursor d-none d-sm-block"></div>
 
      <section class="container d-flex justify-content-center">
-          <div class="bg-black rounded-3 p-5 col-10">
+          <div class="bg-black rounded-3 p-3 col-10">
                <div class=" text-center box font">
-                    <h1 class="text-light">Our Developers</h1>
+                    <h1 class="text-light my-3">Our Developers</h1>
                </div>
                <div class="row text-center my-5">
                     <!-- Team item -->
-                    <div class="col-xl-6 col-sm-6 mb-5 h-100 card-shadow">
+                    <div class="col-xl-6 col-sm-6 mb-5 h-100">
                          <div class="bg-white rounded shadow-sm py-5 px-4">
                               <img src="/images/sumit.jpeg" alt="" width="300"
                                    class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm 3D-effect" height="200"
@@ -84,6 +85,7 @@
                $("#footer").load("/include/footer.html");
           });
      </script>
+     <script type="text/javascript" src="/js/script.js"></script>
      <script type="text/javascript" src="/js/vanilla-tilt.js"></script>
      <script type="text/javascript">
           VanillaTilt.init(document.querySelector(".3d-effect"), {

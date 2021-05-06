@@ -22,18 +22,23 @@
 
 <body>
      <div id="navbar"></div>
+     <div class="cursor d-none d-sm-block"></div>
 
 
-     <section class=" text-lg-start d-flex justify-content-between flex-wrap">
-          <div class="image p-sm-4">
+     <section class=" text-lg-start d-flex justify-content-md-center  flex-wrap">
+
+          <div class="image p-sm-2 d-none d-lg-block justify-content-md-center">
                <img src="/images/about.png" class="img-fluid 3D-effect" alt="Hero Image" width="500" height="400"
                     data-tilt>
           </div>
           <div class=" col-lg-6 p-4 text-lg-start text-center text-dark align-self-center">
                <h1 class="display-3 fw-bold lh-1 mb-3">About Us</h1>
-               <p class="lead">ProPack is a solution for every beginner programmer who cannot find the right resources
-                    and projects. We provide basic web development projects now on our website we are planning to add
-                    some more projects in the future and this is an open-source project so anyone can contribute to it.
+               <p class="lead">ProPack is a solution for every beginner programmer who cannot find the right
+                    resources
+                    and projects. We provide basic web development projects now on our website we are planning
+                    to add
+                    some more projects in the future and this is an open-source project so anyone can
+                    contribute to it.
                     Let's Build It Together.</p>
           </div>
 
@@ -52,6 +57,7 @@
                $("#footer").load("/include/footer.html");
           });
      </script>
+     <script type="text/javascript" src="/js/script.js"></script>
      <script type="text/javascript" src="/js/vanilla-tilt.js"></script>
      <script type="text/javascript">
           VanillaTilt.init(document.querySelector(".3d-effect"), {

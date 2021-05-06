@@ -21,23 +21,21 @@
 
 <body>
   <div id="navbar"></div>
-
-
+  <div class="cursor d-none d-sm-block"></div>
   <section class="container d-flex justify-content-center">
     <div class="bg-black rounded-3 p-lg-5 p-sm-2 col-10">
       <h1 class="text-center my-3 text-light">
         ProPack To-Do App
       </h1>
-      <div class="input-group mb-3 my-5 p-4">
-        <input type="text" class="form-control input" placeholder="Add Your list here">
-        <button class="input-group-text btn btn-success" id="basic-addon2">+</button>
-      </div>
-      <div class="list">
-        <ul class="list-group p-4">
-        </ul>
-      </div>
+      <form action="#" class="input-group mb-3 my-5 p-4 todo-form">
+        <input type=" text" class="todo-input form-control" placeholder="Add a Todo...">
+        <button type=" submit" class="add-button btn-success input-group-text">Add</button>
+      </form>
 
+      <ul class=" todo-items list-group-flush list-unstyled mb-3 my-5 p-4">
+      </ul>
     </div>
+
   </section>
 
   <div id="footer"></div>
@@ -46,6 +44,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
   </script>
+  <script type="text/javascript" src="/js/script.js"></script>
   <script>
     $(function () {
       $("#navbar").load("/include/navbar.html");
