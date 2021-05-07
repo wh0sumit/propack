@@ -10,13 +10,6 @@
   </p>
 </div>
 
-## Key Headings
-
-- [Introduction to the Project](#Introduction)
-- [How to start using ProPack](#Get-Started)
-- [Documentation](#Documentation)
-- [Contributing](#CONTRIBUTING)
-
 ## Introduction
 
 ProPack is a solution for every beginner programmer who cannot find the right resources and projects. We provide basic web development projects now on our website we are planning to add some more projects in the future and this is an open-source project so anyone can contribute to it.
