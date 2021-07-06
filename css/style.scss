@@ -61,10 +61,10 @@ body {
 }
 
 .btn-primary-custom {
-  background-color: $primary-color;
-  color: $secondary-color;
+  border: 2px solid $secondary-color;
+  color: #000;
   &:hover {
-    color: $secondary-color;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
   }
 }
 .btn-secondary-custom {

@@ -77,12 +77,13 @@ body {
 }
 
 .btn-primary-custom {
-  background-color: #fff;
-  color: #8c52ff;
+  border: 2px solid #8c52ff;
+  color: #000;
 }
 
 .btn-primary-custom:hover {
-  color: #8c52ff;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
 }
 
 .btn-secondary-custom {
