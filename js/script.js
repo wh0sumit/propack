@@ -11,7 +11,8 @@ $(document).ready(function(){
       $(window)
           .mouseleave(function() {
               cursor.css({
-                  opacity: "0"
+                  opacity: "0",
+                  backgroundColor: "rgb(140, 82, 255)"
               });
           })
           .mouseenter(function() {
@@ -23,7 +24,19 @@ $(document).ready(function(){
       $("p")
           .mouseenter(function() {
               cursor.css({
-                  transform: "scale(3.2)"
+                  transform: "scale(3.2)",
+                  backgroundColor: "rgba(140, 82, 255, 0.5)"
+              });
+          })
+          .mouseleave(function() {
+              cursor.css({
+                  transform: "scale(1)"
+              });
+          });
+      $(".btn")
+          .mouseenter(function() {
+              cursor.css({
+                transform: "scale(0)"
               });
           })
           .mouseleave(function() {
@@ -32,15 +45,4 @@ $(document).ready(function(){
               });
           });
   
-      $(window)
-          .mousedown(function() {
-              cursor.css({
-                  transform: "scale(.2)"
-              });
-          })
-          .mouseup(function() {
-              cursor.css({
-                  transform: "scale(1)"
-              });
-          });
   });

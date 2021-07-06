@@ -24,15 +24,19 @@
      <div id="navbar"></div>
 
      <div class="cursor d-none d-sm-block"></div>
-
-     <section class="container d-flex justify-content-center ">
-          <div class="bg-black rounded-3 p-lg-5 p-sm-1 col-10">
-               <div class=" text-center box font">
-                    <h1 class="text-light py-2">Our Projects</h1>
+     <section class="py-5 text-center container">
+          <div class="row pt-lg-5">
+               <div class="col-lg-6 col-md-8 mt-5 mx-auto">
+                    <h1 class="fw-light">Our Projects</h1>
+                    <p class="lead text-muted">We are always here for your help, Learn the right way !</p>
                </div>
+          </div>
+     </section>
+     <div class="d-flex justify-content-center my-5">
+          <div class=" rounded-3 p-lg-5 p-sm-1 col-11 mb-5">
                <div class="row p-2">
                     <div class="col-md-4 my-1">
-                         <div class="card h-100 card-shadow">
+                         <div class="card h-100 shadow-sm">
                               <div class="card-body p-4">
                                    <h5 class="card-title fw-bold">Propack To-Do App</h5>
                                    <p class="card-text">
@@ -40,18 +44,18 @@
                                         your
                                         day-to-day.</p>
                               </div>
-                              <div class="d-flex justify-content-start m-2">
+                              <div class="d-flex justify-content-between m-3">
                                    <a href="/projects/todo/todo.html"
                                         class="btn btn-secondary-custom text-light rounded-pill align-self-center">Live
                                         Preview</a>
                                    <a href="https://github.com/WH0SUMIT/propack/tree/main/projects/todo"
-                                        class="text-decoration-none social-icon align-self-center"> <i
+                                        class="text-decoration-none text-black align-self-center"> <i
                                              class="fab fa-github fs-1 align-self-center mx-3 "></i></a>
                               </div>
                          </div>
                     </div>
                     <div class="col-md-4 my-1">
-                         <div class="card h-100 card-shadow">
+                         <div class="card h-100 shadow-sm">
                               <div class="card-body p-4">
                                    <h5 class="card-title fw-bold">Propack Weather-Finder App</h5>
                                    <p class="card-text">Find real time weather of any city on one click and you can also
@@ -59,37 +63,37 @@
                                         longitude and latitude of that city at ProPack Weather Finder
                                    </p>
                               </div>
-                              <div class="d-flex justify-content-start m-2">
+                              <div class="d-flex justify-content-between m-3">
                                    <a href="/projects/weather-finder/weather-finder.html"
                                         class="btn btn-secondary-custom text-light rounded-pill align-self-center">Live
                                         Preview</a>
                                    <a href="https://github.com/WH0SUMIT/propack/tree/main/projects/weather-finder"
-                                        class="text-decoration-none social-icon align-self-center"> <i
+                                        class="text-decoration-none text-black align-self-center"> <i
                                              class="fab fa-github fs-1 align-self-center mx-3 "></i></a>
                               </div>
                          </div>
                     </div>
                     <div class="col-md-4 my-1">
-                         <div class="card h-100 card-shadow">
+                         <div class="card h-100 shadow-sm">
                               <div class="card-body p-4">
                                    <h5 class="card-title fw-bold">Propack Food-Finder App</h5>
                                    <p class="card-text">In this application, You can simply find your meals and see some
                                         instructions about your meal like ingredients and you can also watch a video.
                                    </p>
                               </div>
-                              <div class="d-flex justify-content-start m-2">
+                              <div class="d-flex justify-content-between m-3">
                                    <a href="/projects/food-finder/food-finder.html"
                                         class="btn btn-secondary-custom text-light rounded-pill align-self-center">Live
                                         Preview</a>
                                    <a href="https://github.com/WH0SUMIT/propack/tree/main/projects/food-finder"
-                                        class="text-decoration-none social-icon align-self-center"> <i
+                                        class="text-decoration-none text-black align-self-center"> <i
                                              class="fab fa-github fs-1 align-self-center mx-3 "></i></a>
                               </div>
                          </div>
                     </div>
                </div>
           </div>
-     </section>
+     </div>
 
      <div id="footer"></div>
 
@@ -105,8 +109,7 @@
                $("#footer").load("/include/footer.html");
           });
      </script>
-     <script>
-          ‍
+     <!-- <script>
           var $cursor = $('.cursor');‍
           function moveCursor(e) {
                $cursor.css({
@@ -115,7 +118,7 @@
                });
           }‍
           $(window).on('mousemove', moveCursor);‍‍
-     </script>
+     </script> -->
 </body>
 
 </html>
