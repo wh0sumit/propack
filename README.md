@@ -1,11 +1,11 @@
-<h1 align="center">Welcome To ProPack 🚀</h1>
+﻿<h1 align="center">Welcome To ProPack 🚀</h1>
 
 <div style="margin-bottom: 2em;">
   <p align="center">
   <span>
     <a style="font-size: 16px;" href="https://propack.netlify.app/">Website</a> &bullet;
     <a style="font-size: 16px;" href="#">Docs</a>  &bullet;
-    <a style="font-size: 16px;" href="https://discord.com/invite/TgmRxvppg9">Discord</a>
+    <a style="font-size: 16px;" href="https://discord.com/invite/NgWxbsAFmW">Discord</a>
   </span>
   </p>
 </div>
