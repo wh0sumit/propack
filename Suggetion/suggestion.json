@@ -1,0 +1,24 @@
+{
+ "icons" : [   
+    {
+        "id": "1",
+        "title" : "Noun Project",
+        "description" : "Launched in 2011, Noun Project is updated daily with new icons made by a global community of professional creators. It currently holds over two million icons, all of which are free, downloadable and customizable. ",
+        "format" : "SVG and PNG",
+        "live" : "https://thenounproject.com/"
+    },   {
+        "id": "2",
+        "title" : "Material Design Icons",
+        "description" : "As part of Google’s Material Design resources (alongside its color palette generator, font directory and more) is this rich collection of open source icons. The icons are available in five different themes - filled, outlined, rounded, two-tone, and sharp.",
+        "format" : "SVG, PNG and embed CSS",
+        "live" : "https://material.io/resources/icons/?style=baseline"
+    }, {
+        "id": "3",
+        "title" : " Icons8",
+        "description" : "Icons8’s vast collection, all produced and designed in-house, is made up of many icon sets. The website offers complete customization before download, from changing the icon’s color, size and format, to adding text.",
+        "format" : " PNG, SVG, PDF and embed HTML",
+        "live" : "https://icons8.com/icons"
+    }
+]
+
+}
