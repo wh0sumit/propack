@@ -24,6 +24,14 @@
         "description" : "A basic Javascript stopwatch which allows you to count up from zero with start, reset and stop controls. ",
         "live" : "./projectList/Javascript-Stopwatch/index.html",
         "github_url": "https://github.com/WH0SUMIT/propack/tree/main/projects/projectList/Javascript-Stopwatch"
+    },
+    {
+        "id": "5",
+        "title" : "Propack Age Calculator",
+        "description" : "A basic Javascript age calculator which allows you to calculate age in days,months and years. It also wishes you on your birthday.",
+        "live" : "./projectList/Age-Calculator/index.html",
+        "github_url": "https://github.com/WH0SUMIT/propack/tree/main/projects/projectList/Age-Calculator"
     }
+
 
  ]
