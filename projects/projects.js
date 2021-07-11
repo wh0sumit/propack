@@ -1,4 +1,13 @@
 $(document).ready(() => {
+    //Preloader
+    preloaderFadeOutTime = 1500;
+
+    function hidePreloader() {
+         var preloader = $('#spinner-wrapper');
+         preloader.fadeOut(preloaderFadeOutTime);
+    }
+    hidePreloader();
+
      let card;
      async function getProjects() {
           // await response of fetch call
@@ -30,7 +39,7 @@ $(document).ready(() => {
                          <a href="${project.live}"
                               class="btn btn-secondary-custom text-light rounded-pill align-self-center">Live
                               Preview</a>
-                         <a href="https://github.com/WH0SUMIT/propack/tree/main/projects/food-finder"
+                         <a href="${project.github_url}"
                               class="text-decoration-none text-black align-self-center"> <i
                                    class="fab fa-github fs-1 align-self-center mx-3 "></i></a>
                     </div>

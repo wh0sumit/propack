@@ -1,116 +1,172 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
-$primary-color: #fff;
-$secondary-color: #8c52ff;
 * {
   font-family: Poppins;
   cursor: none;
+}
 
-  .cursor {
-    position: fixed;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: $secondary-color;
-    pointer-events: none;
-    z-index: 999;
-    transition: transform 0.2s;
-  }
+* .cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #8c52ff;
+  pointer-events: none;
+  z-index: 999;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 body {
-  background-color: $primary-color;
+  background-color: #fff;
   margin: 0;
   padding: 0;
 }
+
 .nav-link {
+  -webkit-transition: all 0.8s;
   transition: all 0.8s;
-  &:hover {
-    text-decoration-line: underline;
-    text-decoration-style: wavy;
-  }
 }
+
+.nav-link:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-style: wavy;
+          text-decoration-style: wavy;
+}
+
 .bg-transparent {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(1.5px);
   -webkit-backdrop-filter: blur(1.5px);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 1px 3px rgba(124, 117, 117, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 0 1px 3px rgba(124, 117, 117, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(124, 117, 117, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
+
 .text-black {
   color: #000;
-  &:hover {
-    color: $secondary-color;
-  }
 }
+
+.text-black:hover {
+  color: #8c52ff;
+}
+
 .rounded-4 {
   border-radius: 50px;
 }
+
 .social-icon {
-  color: $secondary-color;
+  color: #8c52ff;
 }
 
 .heading {
+  -webkit-transition: all 2s;
   transition: all 2s;
-  &:hover {
-    text-decoration: underline;
-  }
 }
+
+.heading:hover {
+  text-decoration: underline;
+}
+
 .bg-black {
-  background-color: rgb(29, 29, 29);
+  background-color: #1d1d1d;
 }
 
 .btn-primary-custom {
-  border: 2px solid $secondary-color;
+  border: 2px solid #8c52ff;
   color: #000;
-  &:hover {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
-  }
 }
+
+.btn-primary-custom:hover {
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
+}
+
 .btn-secondary-custom {
-  background-color: $secondary-color;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background-color: #8c52ff;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  &:hover {
-    color: $primary-color;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  }
 }
+
+.btn-secondary-custom:hover {
+  color: #fff;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
 .card-shadow {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  &:hover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  }
 }
+
+.card-shadow:hover {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
 section {
   padding: 10rem 0;
 }
 
-// ************* Cursor *************
-
 .block__link {
   padding: 0.5em;
   text-decoration: none;
+  -webkit-transition: letter-spacing 200ms ease;
   transition: letter-spacing 200ms ease;
-  &:hover {
-    letter-spacing: 0.1em;
-  }
-}
-html {
-  background: $primary-color;
 }
 
-// ******SVG***********
+.block__link:hover {
+  letter-spacing: 0.1em;
+}
+
+html {
+  background: #fff;
+}
 
 .svg-animation {
   -webkit-animation: vibrate-1 3s linear infinite forwards;
   animation: svg-animation 3s linear infinite forwards;
 }
 
+@-webkit-keyframes svg-animation {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+
 @keyframes svg-animation {
   0% {
-    transform: translate(0);
+    -webkit-transform: translate(0);
+            transform: translate(0);
   }
   20% {
     -webkit-transform: translate(-2px, 2px);
@@ -135,7 +191,37 @@ html {
 }
 
 .shake-horizontal {
-  animation: shake-horizontal 3s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  -webkit-animation: shake-horizontal 3s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+          animation: shake-horizontal 3s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+@-webkit-keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+    transform: translateX(-8px);
+  }
 }
 
 @keyframes shake-horizontal {
@@ -166,6 +252,7 @@ html {
     transform: translateX(-8px);
   }
 }
+
 /* *********PreLoader Start ************* */
 .sk-folding-cube {
   position: absolute;
@@ -184,9 +271,9 @@ html {
   height: 50%;
   position: relative;
   -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
+
 .sk-folding-cube .sk-cube:before {
   content: "";
   position: absolute;
@@ -194,37 +281,43 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: $primary-color;
+  background-color: #fff;
   -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
   animation: sk-foldCubeAngle 2.4s infinite linear both;
   -webkit-transform-origin: 100% 100%;
-  -ms-transform-origin: 100% 100%;
   transform-origin: 100% 100%;
 }
+
 .sk-folding-cube .sk-cube2 {
   -webkit-transform: scale(1.1) rotateZ(90deg);
   transform: scale(1.1) rotateZ(90deg);
 }
+
 .sk-folding-cube .sk-cube3 {
   -webkit-transform: scale(1.1) rotateZ(180deg);
   transform: scale(1.1) rotateZ(180deg);
 }
+
 .sk-folding-cube .sk-cube4 {
   -webkit-transform: scale(1.1) rotateZ(270deg);
   transform: scale(1.1) rotateZ(270deg);
 }
+
 .sk-folding-cube .sk-cube2:before {
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
+
 .sk-folding-cube .sk-cube3:before {
   -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
 }
+
 .sk-folding-cube .sk-cube4:before {
   -webkit-animation-delay: 0.9s;
   animation-delay: 0.9s;
 }
+
 @-webkit-keyframes sk-foldCubeAngle {
   0%,
   10% {
@@ -266,14 +359,14 @@ html {
     opacity: 0;
   }
 }
+
 #spinner-wrapper {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: $secondary-color;
+  background-color: #8c52ff;
   z-index: 999999;
 }
-
-// ************* Card **************
+/*# sourceMappingURL=project.css.map */
