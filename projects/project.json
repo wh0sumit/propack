@@ -17,6 +17,13 @@
          "description" : "In this application, You can simply find your meals and see some instructions about your meal like ingredients and you can also watch a video.",
          "live" : "./projectList/food-finder/food-finder.html",
          "github_url": "https://github.com/WH0SUMIT/propack/tree/main/projects/projectList/food-finder"
-     }
+     },
+     {
+        "id": "4",
+        "title" : "Propack Javascript-Stopwatch",
+        "description" : "A basic Javascript stopwatch which allows you to count up from zero with start, reset and stop controls. ",
+        "live" : "./projectList/Javascript-Stopwatch/index.html",
+        "github_url": "https://github.com/WH0SUMIT/propack/tree/main/projects/projectList/Javascript-Stopwatch"
+    }
 
  ]
