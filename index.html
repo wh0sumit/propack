@@ -22,6 +22,16 @@
 </head>
 
 <body>
+     <div id="spinner-wrapper">
+          <div class="sk-folding-cube">
+              <div class="sk-cube1 sk-cube"></div>
+              <div class="sk-cube2 sk-cube"></div>
+              <div class="sk-cube4 sk-cube"></div>
+              <div class="sk-cube3 sk-cube"></div>
+          </div>
+      </div>
+
+
      <!-- navbar-start  -->
      <div id="navbar"></div>
      <!-- navbar-end -->
@@ -133,6 +143,19 @@
 
           //It also supports NodeList
           VanillaTilt.init(document.querySelectorAll(".3d-effect"));
+     </script>
+     <script>
+          $(document).ready(function() {
+               //Preloader
+               preloaderFadeOutTime = 1000;
+               function hidePreloader() {
+               var preloader = $('#spinner-wrapper');
+               preloader.fadeOut(preloaderFadeOutTime);
+               }
+               hidePreloader();
+           });
+           
+
      </script>
 
 </body>
