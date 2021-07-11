@@ -1,5 +1,16 @@
 $(document).ready(function(){
-  var cursor = $(".cursor");
+    //Preloader Start
+    preloaderFadeOutTime = 3000;
+
+    function hidePreloader() {
+         var preloader = $('#spinner-wrapper');
+         preloader.fadeOut(preloaderFadeOutTime);
+    }
+    hidePreloader();
+ //Preloader End
+
+ //Cursor Start
+    var cursor = $(".cursor");
   
       $(window).mousemove(function(e) {
           cursor.css({
@@ -44,5 +55,5 @@ $(document).ready(function(){
                   transform: "scale(1)"
               });
           });
-  
+   //Cursor End
   });
