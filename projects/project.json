@@ -31,6 +31,13 @@
         "description" : "A basic Javascript age calculator which allows you to calculate age in days,months and years. It also wishes you on your birthday.",
         "live" : "./projectList/Age-Calculator/index.html",
         "github_url": "https://github.com/WH0SUMIT/propack/tree/main/projects/projectList/Age-Calculator"
+    },
+     {
+        "id": "6",
+        "title" : "Propack Color Guessing Game",
+        "description" : "A basic Javascript game using rgb values the player has to guess color from given rgb value.",
+        "live" : "./projectList/color-guessor/index.html",
+        "github_url": "https://github.com/WH0SUMIT/propack/tree/main/projects/projectList/color-guessor"
     }
 
 
