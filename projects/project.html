@@ -18,7 +18,7 @@
           integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
           crossorigin="anonymous" />
      <link rel="stylesheet" href="./css/project.css">
-     
+
 
      <title>Propack | Projects</title>
 </head>
@@ -60,27 +60,9 @@
 
      <div id="footer"></div>
      <!--scroll to top button-->
-     <button id="scrollToTopButton" title="Go to top" class="ml-5">
-          <i class="fa fa-angle-double-up" aria-hidden="true" style="color: black;font-weight: bolder;"></i>
-        </button>
-        <script>
-          $(document).ready(function () {
-            var scrollTopButton = document.getElementById("scrollToTopButton");
-            window.onscroll = function () { scrollFunction() };
-      
-            function scrollFunction() {
-              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                scrollTopButton.style.display = "block";
-              } else {
-                scrollTopButton.style.display = "none";
-              }
-            }
-      
-            $("#scrollToTopButton").click(function () {
-              $('html ,body').animate({ scrollTop: 0 }, 800)
-            });
-          });
-        </script>
+     <button id="scrollToTopButton" title="Go to top" class="mx-4 shadow-sm scrollToTopBtn">
+          <i class="fa fa-rocket align-self-center text-light" aria-hidden="true"></i>
+     </button>
 
 
      <!-- Option 1: Bootstrap Bundle with Popper -->

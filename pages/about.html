@@ -133,27 +133,10 @@
 
      <div id="footer"></div>
      <!--scroll to top button-->
-     <button id="scrollToTopButton" title="Go to top" class="ml-5">
-          <i class="fa fa-angle-double-up" aria-hidden="true" style="color: black;font-weight: bolder;"></i>
-        </button>
-        <script>
-          $(document).ready(function () {
-            var scrollTopButton = document.getElementById("scrollToTopButton");
-            window.onscroll = function () { scrollFunction() };
-      
-            function scrollFunction() {
-              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                scrollTopButton.style.display = "block";
-              } else {
-                scrollTopButton.style.display = "none";
-              }
-            }
-      
-            $("#scrollToTopButton").click(function () {
-              $('html ,body').animate({ scrollTop: 0 }, 800)
-            });
-          });
-        </script>
+     <button id="scrollToTopButton" title="Go to top" class="mx-4 shadow-sm scrollToTopBtn">
+          <i class="fa fa-rocket align-self-center text-light" aria-hidden="true"></i>
+     </button>
+
 
      <!-- Option 1: Bootstrap Bundle with Popper -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
@@ -167,15 +150,6 @@
      </script>
      <script type="text/javascript" src="/js/script.js"></script>
      <script type="text/javascript" src="/js/vanilla-tilt.js"></script>
-     <script type="text/javascript">
-          VanillaTilt.init(document.querySelector(".3d-effect"), {
-               max: 25,
-               speed: 400
-          });
-
-          //It also supports NodeList
-          VanillaTilt.init(document.querySelectorAll(".3d-effect"));
-     </script>
 </body>
 
 </html>
