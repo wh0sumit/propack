@@ -3,23 +3,6 @@
   font-family: Poppins;
   cursor: none;
 }
-#scrollToTopButton {
-  position: fixed;
-  bottom: 40px;
-  right: 10px;
-  font-size: 25px;
-  z-index: 99;
-  width: 50px;
-  height: 50px;
-  background-color:#8c52ff;
-  color: black;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  padding: 6px;
-  border-radius: 50%;
-  box-shadow: 0 6px 10px 0px gray;
-}
 
 * .cursor {
   position: fixed;
@@ -33,6 +16,44 @@
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
   transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+#scrollToTopButton {
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  font-size: 25px;
+  z-index: 99;
+  width: 50px;
+  height: 50px;
+  background-color: #8c52ff;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 8px 6px;
+  cursor: pointer !important;
+  border-radius: 50%;
+}
+
+#scrollToTopButton i {
+  cursor: pointer !important;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.scrollToTopBtn {
+  /* also add a translate effect */
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  /* and a transition */
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.showBtn {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 body {
@@ -54,12 +75,10 @@ body {
 }
 
 .bg-transparent {
-  background: rgba(255, 255, 255, 0.1);
+  background: -webkit-gradient(linear, left top, left bottom, from(#8c52ff38), to(rgba(255, 255, 255, 0.356)));
+  background: linear-gradient(#8c52ff38, rgba(255, 255, 255, 0.356));
   backdrop-filter: blur(1.5px);
   -webkit-backdrop-filter: blur(1.5px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  -webkit-box-shadow: 0 1px 3px rgba(124, 117, 117, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-          box-shadow: 0 1px 3px rgba(124, 117, 117, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
