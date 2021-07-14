@@ -38,6 +38,13 @@
         "description" : "A basic Javascript game using rgb values the player has to guess color from given rgb value.",
         "live" : "./projectList/color-guessor/index.html",
         "github_url": "https://github.com/WH0SUMIT/propack/tree/main/projects/projectList/color-guessor"
+    },
+    {
+        "id": "7",
+        "title" : "Propack Calculator",
+        "description" : " A calculator which performs the basic mathematical operations like addition, subtraction, multiplication and division.",
+        "live" : "./projectList/Calculator/index.html",
+        "github_url": "https://github.com/WH0SUMIT/propack/tree/main/projects/projectList/Calculator"
     }
 
 
