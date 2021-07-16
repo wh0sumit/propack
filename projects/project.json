@@ -44,7 +44,15 @@
        "description" : "A basic Javascript form validation site.",
        "live" : "./projectList/form-validation/index.html",
        "github_url": "https://github.com/WH0SUMIT/propack/tree/main/projects/projectList/form-validation"
-   }
+   },
+   {
+    "id": "7",
+    "title" : "Propack Calculator",
+    "description" : "A calculator which performs the basic mathematical operations like addition, subtraction, multiplication and division.",
+    "live" : "./projectList/Calculator/index.html",
+    "github_url": "https://github.com/WH0SUMIT/propack/tree/main/projects/projectList/Calculation"
+}
+
 
 
 ]
