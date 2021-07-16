@@ -38,6 +38,12 @@
         "description" : "A basic Javascript game using rgb values the player has to guess color from given rgb value.",
         "live" : "./projectList/color-guessor/index.html",
         "github_url": "https://github.com/WH0SUMIT/propack/tree/main/projects/projectList/color-guessor"
+    }, {
+        "id": "7",
+        "title" : "Propack Form Validation in javascript",
+        "description" : "A basic Javascript form validation site.",
+        "live" : "./projectList/form-validation/index.html",
+        "github_url": "https://github.com/WH0SUMIT/propack/tree/main/projects/projectList/form-validation"
     }
 
 
