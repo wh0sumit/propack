@@ -46,11 +46,11 @@
        "github_url": "https://github.com/WH0SUMIT/propack/tree/main/projects/projectList/form-validation"
    },
    {
-    "id": "7",
+    "id": "8",
     "title" : "Propack Calculator",
     "description" : "A calculator which performs the basic mathematical operations like addition, subtraction, multiplication and division.",
     "live" : "./projectList/Calculator/index.html",
-    "github_url": "https://github.com/WH0SUMIT/propack/tree/main/projects/projectList/Calculation"
+    "github_url": "https://github.com/WH0SUMIT/propack/tree/main/projects/projectList/Calculator"
 }
 
 
