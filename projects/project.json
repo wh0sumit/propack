@@ -51,7 +51,15 @@
     "description" : "A calculator which performs the basic mathematical operations like addition, subtraction, multiplication and division.",
     "live" : "./projectList/Calculator/index.html",
     "github_url": "https://github.com/WH0SUMIT/propack/tree/main/projects/projectList/Calculator"
+},
+{
+    "id": "9",
+    "title" : "Propack Tip Calculator",
+    "description" : "A calculator where one can generate the amount of tip to be given to their server.",
+    "live" : "./projectList/Calculator/tip.html",
+    "github_url": "https://github.com/WH0SUMIT/propack/tree/main/projects/projectList/Tip-Calculator"
 }
+
 
 
 ]
