@@ -51,7 +51,14 @@
     "description" : "A calculator which performs the basic mathematical operations like addition, subtraction, multiplication and division.",
     "live" : "./projectList/Calculator/index.html",
     "github_url": "https://github.com/WH0SUMIT/propack/tree/main/projects/projectList/Calculator"
-}
+   }, 
+   {
+       "id": "9",
+       "title" : "Propack TicTacToe",
+       "description" : "A game which can be played using crosses and circles in penboard",
+       "live" : "./projectList/penboard-tictactoe/index.html",
+       "github_url": "https://github.com/WH0SUMIT/propack/tree/main/projects/projectList/penboard-tictactoe"
+   }
 
 
 
