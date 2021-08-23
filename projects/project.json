@@ -69,7 +69,7 @@
     "id": "11",
     "title" : "Propack Tip Calculator",
     "description" : "A calculator where one can generate the amount of tip to be given to their server.",
-    "live" : "./projectList/Calculator/tip.html",
+    "live" : "./projectList/Tip-Calculator/tip.html",
     "github_url": "https://github.com/WH0SUMIT/propack/tree/main/projects/projectList/Tip-Calculator"
 }
 ]
