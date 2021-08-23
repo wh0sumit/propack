@@ -17,6 +17,8 @@
           integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
           crossorigin="anonymous" />
      <link rel="stylesheet" href="css/style.css">
+     <!-- Animate on Scroll -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
      <title>Propack</title>
 </head>
@@ -59,7 +61,7 @@
           <h1 class="fw-bold">What Do We Provide?</h1>
           <p class="lead text-muted">The new and free way to improve your programming skills.</p>
      </div>
-     <div class="d-flex justify-content-center my-5">
+     <div class="d-flex justify-content-center my-5"  data-aos="fade-up" data-aos-easing="linear" data-aos-delay="200" data-aos-duration="600">
           <div class="container rounded-3 p-lg-5 pt-0 p-sm-1 col-11 mb-5">
                <div class="row p-2">
                     <div class="col-md-4 my-1">
@@ -139,8 +141,9 @@
                $("#footer").load("include/footer.html");
           });
      </script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
      <script type="text/javascript" src="js/script.js"></script>
-
+    
 </body>
 
 </html>
