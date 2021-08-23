@@ -51,7 +51,13 @@
     "description" : "A calculator which performs the basic mathematical operations like addition, subtraction, multiplication and division.",
     "live" : "./projectList/Calculator/index.html",
     "github_url": "https://github.com/WH0SUMIT/propack/tree/main/projects/projectList/Calculator"
-}
+   },{
+    "id": "9",
+    "title" : "Propack BMI Calculator",
+    "description" : "A calculator which calculates body mass index using height and weight.",
+    "live" : "./projectList/bmi-calculator/index.html",
+    "github_url": "https://github.com/WH0SUMIT/propack/tree/main/projects/projectList/bmi-calculator"
+  }
 
 
 
