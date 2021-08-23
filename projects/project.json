@@ -52,14 +52,24 @@
     "live" : "./projectList/Calculator/index.html",
     "github_url": "https://github.com/WH0SUMIT/propack/tree/main/projects/projectList/Calculator"
 },
-{
-    "id": "9",
+   {
+       "id": "9",
+       "title" : "Propack TicTacToe",
+       "description" : "A game in which two players seek in alternate turns to complete a row, a column, or a diagonal with either three O's or three X's drawn in the spaces of a grid of nine squares; noughts and crosses.",
+       "live" : "./projectList/penboard-tictactoe/index.html",
+       "github_url": "https://github.com/WH0SUMIT/propack/tree/main/projects/projectList/penboard-tictactoe"
+   },{
+    "id": "10",
+    "title" : "Propack BMI Calculator",
+    "description" : "A calculator which calculates body mass index using height and weight.",
+    "live" : "./projectList/bmi-calculator/index.html",
+    "github_url": "https://github.com/WH0SUMIT/propack/tree/main/projects/projectList/bmi-calculator"
+  },
+  {
+    "id": "11",
     "title" : "Propack Tip Calculator",
     "description" : "A calculator where one can generate the amount of tip to be given to their server.",
     "live" : "./projectList/Calculator/tip.html",
     "github_url": "https://github.com/WH0SUMIT/propack/tree/main/projects/projectList/Tip-Calculator"
 }
-
-
-
 ]

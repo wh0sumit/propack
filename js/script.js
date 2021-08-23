@@ -1,3 +1,5 @@
+AOS.init();
+
 $(document).ready(function(){
     //Preloader Start
     preloaderFadeOutTime = 3000;
