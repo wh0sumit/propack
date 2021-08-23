@@ -1,34 +1,26 @@
 $(document).ready(() => {
-    //Preloader
-    preloaderFadeOutTime = 1500;
+  //Preloader
+  preloaderFadeOutTime = 1500;
 
-    function hidePreloader() {
-         var preloader = $('#spinner-wrapper');
-         preloader.fadeOut(preloaderFadeOutTime);
-    }
-    hidePreloader();
+  function hidePreloader() {
+    var preloader = $("#spinner-wrapper");
+    preloader.fadeOut(preloaderFadeOutTime);
+  }
+  hidePreloader();
 
-     let card;
-     async function getProjects() {
-          // await response of fetch call
-          let response = await fetch('./project.json');
-          // only proceed once promise is resolved
-          let data = await response.json();
+  let card;
+  async function getProjects() {
+    // await response of fetch call
+    let response = await fetch("./project.json");
+    // only proceed once promise is resolved
+    let data = await response.json();
 
+    fetchProjects(data);
+  }
 
-
-          fetchProjects(data);
-
-
-
-
-     }
-
-
-
-     function fetchProjects(projects) {
-          projects.map(project => {
-               card = `<div class="col-md-4 my-1">
+  function fetchProjects(projects) {
+    projects.map((project) => {
+      card = `<div class="col-md-4 my-1">
                <div class="card h-100 shadow-sm">
                     <div class="card-body p-4">
                          <h5 class="card-title fw-bold">${project.title}</h5>
@@ -45,11 +37,9 @@ $(document).ready(() => {
                     </div>
                </div>
           </div>`;
-               $('.projectCard').append(card);
-          })
+      $(".projectCard").append(card);
+    });
+  }
 
-     }
-
-     getProjects();
-
+  getProjects();
 });

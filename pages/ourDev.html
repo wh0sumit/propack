@@ -154,9 +154,10 @@
 
 
 
-
-
+     <!-- footer-end -->
      <div id="footer"></div>
+     <!-- footer-end -->
+
      <!--scroll to top button-->
      <button id="scrollToTopButton" title="Go to top" class="mx-4 shadow-sm scrollToTopBtn">
           <i class="fa fa-rocket align-self-center text-light" aria-hidden="true"></i>
@@ -172,17 +173,9 @@
                $("#footer").load("/include/footer.html");
           });
      </script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
      <script type="text/javascript" src="/js/script.js"></script>
      <script type="text/javascript" src="/js/vanilla-tilt.js"></script>
-     <script type="text/javascript">
-          VanillaTilt.init(document.querySelector(".3d-effect"), {
-               max: 25,
-               speed: 400
-          });
-
-          //It also supports NodeList
-          VanillaTilt.init(document.querySelectorAll(".3d-effect"));
-     </script>
 </body>
 
 </html>
